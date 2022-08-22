@@ -34,7 +34,7 @@ function Loging() {
       // localStorage.setItem("user", encryptData(dataSave.login))
       const result = dataSave.login
       const ciphertext = result
-      localStorage.setItem("user", ciphertext)
+      localStorage.setItem("user", JSON.stringify(ciphertext))
       navigate("/profiles")
     }
   }, [dataSave])
